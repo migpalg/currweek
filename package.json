@@ -1,6 +1,6 @@
 {
   "name": "@migpalg/currweek",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Returns the current week number of a provided date",
   "main": "dist/index.js",
   "types": "dist/types/index.d.ts",
@@ -9,6 +9,7 @@
   ],
   "scripts": {
     "test": "jest",
+    "clean": "rm -rf dist",
     "build": "tsc --project tsconfig.build.json"
   },
   "keywords": [
