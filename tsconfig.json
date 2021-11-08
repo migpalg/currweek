@@ -14,11 +14,7 @@
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
-    "strict": true,
-    "paths": {
-      "@lib": ["./src"],
-      "@lib/*": ["./src/*"]
-    }
+    "strict": true
   },
   "include": ["./src/**/*"],
   "exclude": ["node_modules", "dist"]

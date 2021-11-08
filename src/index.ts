@@ -1,1 +1,1 @@
-export * from '@lib/get-week-number/get-week-number';
+export * from './get-week-number/get-week-number';
