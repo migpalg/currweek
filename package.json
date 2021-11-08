@@ -1,8 +1,9 @@
 {
   "name": "@migpalg/currweek",
-  "version": "0.1.0",
-  "description": "",
+  "version": "0.2.0",
+  "description": "Returns the current week number of a provided date",
   "main": "dist/index.js",
+  "types": "dist/types/index.d.ts",
   "files": [
     "dist"
   ],
@@ -10,7 +11,11 @@
     "test": "jest",
     "build": "tsc"
   },
-  "keywords": [],
+  "keywords": [
+    "node",
+    "date",
+    "utility"
+  ],
   "author": "Miguel González <migpalg@gmail.com>",
   "license": "MIT",
   "devDependencies": {
