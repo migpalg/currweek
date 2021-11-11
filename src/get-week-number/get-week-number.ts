@@ -1,8 +1,15 @@
 /**
- * Returns the current week number of the year
+ * Calculates current week number for the specified date
+ * @param date target date to get week numbers
+ * @returns date week number
  */
-export function getWeekNumber(date?: Date): number {
-  const currentDate = date || new Date();
+export function getWeekNumber(date?: Date | number | string | null): number {
+  let currentDate = date || new Date();
+
+  if (!(currentDate instanceof Date)) {
+    currentDate = new Date(currentDate);
+  }
+
   const d = new Date(
     Date.UTC(
       currentDate.getFullYear(),
