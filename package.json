@@ -8,6 +8,9 @@
     "dist"
   ],
   "homepage": "https://github.com/migpalg/currweek",
+  "repository": {
+    "url": "https://github.com/migpalg/currweek"
+  },
   "scripts": {
     "test": "jest",
     "clean": "rm -rf dist",
