@@ -1,6 +1,6 @@
 {
   "name": "@migpalg/currweek",
-  "version": "0.4.0",
+  "version": "0.6.0",
   "description": "Returns the current week number of a provided date",
   "main": "dist/index.js",
   "types": "dist/types/index.d.ts",
@@ -8,6 +8,9 @@
     "dist"
   ],
   "homepage": "https://github.com/migpalg/currweek",
+  "repository": {
+    "url": "https://github.com/migpalg/currweek"
+  },
   "scripts": {
     "test": "jest",
     "clean": "rm -rf dist",
@@ -27,6 +30,7 @@
     "@typescript-eslint/parser": "^5.3.0",
     "eslint": "^8.2.0",
     "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-jest": "^25.2.4",
     "eslint-plugin-prettier": "^4.0.0",
     "jest": "^27.3.1",
     "prettier": "2.4.1",
