@@ -18,9 +18,5 @@ jobs:
       script: pnpm test
     - stage: Publish
       name: Publish npm package
+      if: branch = main
       script: echo "Need to be implemented!"
-  stages:
-    - Build
-    - Test
-    - name: Publish
-      if: branch = master
