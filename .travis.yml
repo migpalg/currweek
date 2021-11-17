@@ -1,0 +1,17 @@
+language: node_js
+node_js:
+  - lts/*
+before_install:
+  - curl -f https://get.pnpm.io/v6.16.js | node - add --global pnpm
+  - pnpm config set store-dir ~/.pnpm-store
+install:
+  - pnpm install
+jobs:
+  include:
+    - stage: Build
+      name: Make production build
+      script: pnpm clean
+    - script: pnpm build
+    - stage: Test
+      name: Unit Test
+      script: pnpm test
