@@ -10,8 +10,17 @@ jobs:
   include:
     - stage: Build
       name: Make production build
-      script: pnpm clean
-    - script: pnpm build
+      script:
+        - pnpm clean
+        - pnpm build
     - stage: Test
       name: Unit Test
       script: pnpm test
+    - stage: Publish
+      name: Publish npm package
+      script: echo "Need to be implemented!"
+  stages:
+    - Build
+    - Test
+    - name: Publish
+      if: branch = master
