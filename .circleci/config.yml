@@ -3,16 +3,12 @@ orbs:
   node: circleci/node@5.1.0
 
 jobs:
-  install:
+  test:
     executor: node/default
     steps:
       - checkout
       - node/install-packages:
           pkg-manager: yarn
-
-  test:
-    executor: node/default
-    steps:
       - run:
           command: yarn test
           name: Run tests
@@ -20,7 +16,4 @@ jobs:
 workflows:
   test_app:
     jobs:
-      - install
-      - test:
-          requires:
-            - install
+      - test
