@@ -21,4 +21,6 @@ workflows:
   test_app:
     jobs:
       - install
-      - test
+      - test:
+          requires:
+            - install
