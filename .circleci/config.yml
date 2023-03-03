@@ -9,13 +9,13 @@ jobs:
       - checkout
       - node/install-packages:
           pkg-manager: yarn
-    
+
   test:
     executor: node/default
-      steps:
-        - run:
-            command: yarn test
-            name: Run tests
+    steps:
+      - run:
+          command: yarn test
+          name: Run tests
 
 workflows:
   test_app:
