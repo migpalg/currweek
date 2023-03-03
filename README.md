@@ -1,7 +1,5 @@
 # `@migpalg/currweek`
 
-[![Build Status](https://app.travis-ci.com/migpalg/currweek.svg?branch=main)](https://app.travis-ci.com/migpalg/currweek)
-
 Returns the current week number
 
 ## 🚀 Getting started
