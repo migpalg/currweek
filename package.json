@@ -1,6 +1,6 @@
 {
   "name": "@migpalg/currweek",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Returns the current week number of a provided date",
   "main": "dist/index.js",
   "types": "dist/types/index.d.ts",
